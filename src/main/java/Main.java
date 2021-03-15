@@ -2,6 +2,7 @@ public class Main extends BasisOfCheck {
 
         //todo add at least inner class
         //todo use collections
+        //todo write at least one exception
 
         public static void main(String[] args) {
                 Book programmingbook = new Book();
