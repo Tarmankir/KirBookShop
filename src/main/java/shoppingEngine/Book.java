@@ -1,3 +1,5 @@
+package shoppingEngine;
+
 public class Book {
 
     private String name;
@@ -15,14 +17,7 @@ public class Book {
         this.price = price;
     }
 
-    public String getPrice() throws NullPointerException {
-        try {
-            return price;
-        } catch (Exception e) {
-            System.out.println(e);
-        } finally {
-            System.out.println("Everything is fine now!");
-        }
+    public String getPrice() {
+        return price;
     }
-
 }

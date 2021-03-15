@@ -1,3 +1,5 @@
+package shoppingEngine;
+
 public class Seller {
 
     private String name;

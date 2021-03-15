@@ -1,3 +1,5 @@
+package shoppingEngine;
+
 public abstract class BasisOfCheck {
 
     public static void showBasisOfCheck() {
