@@ -1,21 +1,15 @@
-import shoppingEngine.BasisOfCheck;
-import shoppingEngine.Book;
-import shoppingEngine.Seller;
-import shoppingEngine.ShoppingPipeline;
+import shoppingEngine.*;
 
 public class Main extends BasisOfCheck {
 
-        //todo add at least inner class
-        //todo use collections
-        //todo write at least one exception
         //todo added unit tests
         //todo create own equals method for objects
-        //todo practise in tdd
 
         public static void main(String[] args) {
+
                 Book programmingbook = new Book();
-                programmingbook.setName("Лучший учебник по Джава ");
-                programmingbook.setPrice("100 руб ");
+                programmingbook.setName(BookStorage.bookInStorege());
+                programmingbook.setPrice(1111);
 
                 Seller ivan = new Seller();
                 ivan.setName("Иван ");
@@ -24,5 +18,13 @@ public class Main extends BasisOfCheck {
                 BasisOfCheck.showBasisOfCheck();
 
                 ShoppingPipeline.showSell(programmingbook, ivan);
+
+                Delivery.DeliveryAdress devadr1 = new Delivery.DeliveryAdress();
+                devadr1.setAdress("Улица Пушкина, дом Колотушкина");
+
+                Delivery.DeliveryMethod devment1 = new Delivery.DeliveryMethod();
+                devment1.setMethod(" Почта России");
+
+                ShoppingPipeline.showDeliv(devadr1, devment1);
         }
 }

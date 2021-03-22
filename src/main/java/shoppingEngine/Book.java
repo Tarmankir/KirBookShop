@@ -3,7 +3,7 @@ package shoppingEngine;
 public class Book {
 
     private String name;
-    private String price;
+    private Integer price;
 
     public void setName(String name) {
         this.name = name;
@@ -13,11 +13,16 @@ public class Book {
         return name;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Integer price) {
         this.price = price;
+        try {
+            this.price = 0;
+        } catch (AbstractMethodError e) {
+            System.out.println("Цена не может быть 0");
+        }
     }
 
-    public String getPrice() {
+    public Integer getPrice() {
         return price;
     }
 }

@@ -20,5 +20,4 @@ public class Seller {
     public String getWorkingDay() {
         return workingDay;
     }
-
 }

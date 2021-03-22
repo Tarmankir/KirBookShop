@@ -7,5 +7,4 @@ public abstract class BasisOfCheck {
         System.out.println("ИНН: 19216821233");
         System.out.println("ОГРН: 1991192222");
     }
-
 }

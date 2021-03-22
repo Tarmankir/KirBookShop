@@ -14,11 +14,11 @@ public class FirstUnitTest {
     void shoppingPipelineTest() {
         Book book = new Book();
         book.setName("Name");
-        book.setPrice("123");
+        book.setPrice(100);
 
         Seller seller = new Seller();
         seller.setName("Name");
-        seller.setWorkingDay("123");
+        seller.setWorkingDay("Вторник");
 
         assertEquals(showSell(book, seller), "Книгу Name 123 продал Name 123");
     }
