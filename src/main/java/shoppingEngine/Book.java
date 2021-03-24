@@ -13,12 +13,10 @@ public class Book {
         return name;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Integer price) throws PriceExeption {
         this.price = price;
-        try {
-            this.price = 0;
-        } catch (AbstractMethodError e) {
-            System.out.println("Цена не может быть 0");
+        if (this.price == 0) {
+            throw new PriceExeption("Цена не должна быть 0");
         }
     }
 

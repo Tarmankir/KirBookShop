@@ -5,11 +5,11 @@ public class Main extends BasisOfCheck {
         //todo added unit tests
         //todo create own equals method for objects
 
-        public static void main(String[] args) {
+        public static void main(String[] args) throws PriceExeption {
 
                 Book programmingbook = new Book();
                 programmingbook.setName(BookStorage.bookInStorege());
-                programmingbook.setPrice(1111);
+                programmingbook.setPrice(111);
 
                 Seller ivan = new Seller();
                 ivan.setName("Иван ");
