@@ -1,5 +1,7 @@
 import shoppingEngine.*;
 
+import java.util.Arrays;
+
 public class Main extends BasisOfCheck {
 
         //todo added unit tests
@@ -9,7 +11,11 @@ public class Main extends BasisOfCheck {
 
                 Book programmingbook = new Book();
                 programmingbook.setName(BookStorage.bookInStorege());
-                programmingbook.setPrice(111);
+                try {
+                        programmingbook.setPrice(0);
+                } catch (PriceExeption exp) {
+                        exp.printStackTrace();
+                }
 
                 Seller ivan = new Seller();
                 ivan.setName("Иван ");
